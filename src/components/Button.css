@@ -1,0 +1,33 @@
+.custom-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 30px 60px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes buttonScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.custom-button:active {
+  animation: buttonScale 0.2s ease;
+}
